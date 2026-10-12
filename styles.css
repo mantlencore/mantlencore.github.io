@@ -1,0 +1,177 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* 헤더 / 상단 바 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.icon {
+    width:48px;
+}
+
+/* 메인 히어로 섹션 */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* 다운로드 버튼 */
+.download-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+.download-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* 앱 스크린샷 영역 */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.phone-mockup {
+    width: 300px;
+    height: 600px;
+    
+    background-color: #e2e8f0; /* 실제 앱 스크린샷 이미지 주소(img src)로 대체하세요 */
+    border: 12px solid #0f172a;
+    border-radius: 36px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.screenshot {
+    width: 250px;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+}
+
+/* 특징(Features) 섹션 */
+.features {
+    background-color: #ffffff;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 30px;
+    background: #f8fafc;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+
+/* 푸터 (하단 정보 및 개인정보처리방침) */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 40px 8%;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* 모바일 대응 반응형 디자인 */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .hero-text h1 {
+        font-size: 32px;
+    }
+}
